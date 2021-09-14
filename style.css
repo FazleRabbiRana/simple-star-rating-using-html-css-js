@@ -1,0 +1,95 @@
+/* -------------------------
+ * General style
+------------------------- */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: sans-serif;
+	background: #0e1e25;
+	color: #dedede;
+	padding: 30px 10px;
+}
+header {
+	text-align: center;
+	margin-bottom: 50px;
+}
+header em {
+	color: coral;
+}
+h1 {
+	font-size: 33px;
+	margin-bottom: 10px;
+}
+/* -------------------------
+ * Items style
+------------------------- */
+.all-items {
+    width:  100%;
+    max-width: 90%;
+    margin: 0 auto;
+	text-align: center;
+	display: grid;
+	gap: 40px 30px;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	justify-content: center;
+}
+.single-item {
+	padding-bottom: 20px;
+    background: hsl(0, 0%, 95%);
+	border: 3px solid #4e5f65;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.item-title {
+	flex: 1 0 100%;
+    background: #4e5f65;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 10px;
+	margin: -1px -1px 15px;
+}
+.rating-number {
+	display: inline-block;
+	color: #000;
+	font-size: 28px;
+	line-height: 1;
+	padding-right: 20px;
+}
+/* -------------------------
+ * Rating star
+------------------------- */
+.rating-wrapper {
+	text-align: center;
+}
+.rating-stars {
+	display: inline-block;
+	padding: 0;
+	position: relative;
+	color: hsl(0, 0%, 40%);
+	color: #0E1E25;
+}
+.empty-rating,
+.fill-rating {
+	display: block;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	z-index: 0;
+}
+.fill-rating {
+	z-index: 1;
+	color: coral;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.rating-stars .star {
+	display: inline-block;
+	font-size: 40px;
+}
